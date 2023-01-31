@@ -1,3 +1,9 @@
+# edited by Zak Davlin
+# Date 1/30/23
+# This repo has multiple emitters and listeners to show how rabbitmq works
+# v3 emitter reads from the current csv file and emits to rabbit
+
+
 # streaming-04-multiple-consumers
 
 > Use RabbitMQ to distribute tasks to multiple workers
@@ -34,6 +40,7 @@ Explore the RabbitMQ website.
 1. Run listening_worker.py
 
 Will it terminate on its own? How do you know? 
+No it will keep running until there is a keyboard interupt.
 
 ## Ready for Work
 
@@ -57,4 +64,4 @@ Which worker gets which tasks?
 
 ## Screenshot
 
-See a running example with at least 3 concurrent process windows here:
+See a running example with at least 3 concurrent process windows here:![Davlin 3 terminals](Screenshot.JPG)
