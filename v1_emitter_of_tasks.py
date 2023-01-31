@@ -7,7 +7,7 @@ Make tasks harder/longer-running by adding dots at the end of the message.
 Approach
 ---------
 Work Queues - one task producer / many workers sharing work.
-
+Had to run batch file to operate rabbitmq connection
 
 """
 
@@ -30,7 +30,7 @@ offer_rabbitmq_admin_site()
 connection = pika.BlockingConnection(pika.ConnectionParameters(host="localhost"))
 # use the connection to create a communication channel
 channel = connection.channel()
-# use the channel to declare a durable queue
+# use the channel to declare a duyrable queue
 # a durable queue will survive a RabbitMQ server restart
 # and help ensure messages are processed in order
 # messages will not be deleted until the consumer acknowledges
